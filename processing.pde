@@ -12,7 +12,7 @@ void setup() {
   img = loadImage("cat-1.png");
 
   
-  // Étape 3 : Redimensionnement PROPORTIONNEL
+
   float ratio = min((float)width/img.width, (float)height/img.height);
   img.resize(int(img.width * ratio), int(img.height * ratio));
   
@@ -29,7 +29,7 @@ void draw() {
   fill( 0);
  
   
-  // Votre traitement des pixels
+
   float tiles = mouseX/2; 
   float tileSize = width/tiles;
   
